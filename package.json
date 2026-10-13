@@ -1,0 +1,23 @@
+{
+  "name": "scorm-vkr-flatbuffers-webtransport",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "SCORM-пакет по теме ВКР: бинарный протокол на базе FlatBuffers + WebTransport (QUIC), Zero-Allocation сервер",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "scorm:pack": "vite build && cd dist && zip -rX ../scorm-package.zip . && cd .."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "vite": "^5.4.10",
+    "vite-plugin-singlefile": "^2.0.3"
+  }
+}
